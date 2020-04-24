@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="assets//js/lib/paper-full.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/paperscript" canvas="myCanvas">
+      var stars = [];
+      var velocity  = 2;
+
+      function randomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      for (var i = 0; i <= 2000; i++) {
+        var circle = new Path.Circle(new Point(view.size.width, view.size.height) * Point.random(), randomInt(0.5, 2));
+        stars.push(circle);
+      }
+
+      for (var i = 0; i <= 2000; i++) {
+        var chance = Math.random();
+
+        if (chance <= 1) {
+          stars[i].fillColor = "white";
+        }
+
+        if (chance <= 0.29) {
+          stars[i].fillColor = "yellow";
+        }
+
+        if (chance <= 0.01) {
+          stars[i].fillColor = "blue";
+        }
+      }
+
+      function assignedRate() {
+        for (var i = 0; i < stars.length; i++) {
+          var assignedRate = Math.random() * velocity;
+          stars[i].rate = assignedRate;
+        }
+      }
+
+      assignedRate();
+
+      function onKeyDown(event) {
+        if (event.key == "d") {
+          velocity++;
+          assignedRate();
+        } else if (event.key == "a") {
+          velocity--;
+          assignedRate();
+        }
+      }
+
+      function onFrame(event) {
+        for (var i = 0; i < stars.length; i++) {
+          stars[i].translate(stars[i].rate, 0);
+          if (stars[i].position.x > view.size.width) {
+            stars[i].position.x = 0;
+          } else if (stars[i].position.x < 0) {
+            stars[i].position.x = view.size.width;
+          }
+        }
+      }
+    </script>
+    <title>Starry Night With Paper JS</title>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+  </body>
+</html>
