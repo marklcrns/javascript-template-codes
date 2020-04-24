@@ -1,1 +1,1 @@
-# JavaScript Codes
+# JavaScript Boilerplates and Useful Codes
