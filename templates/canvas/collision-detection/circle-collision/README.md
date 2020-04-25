@@ -1,12 +1,10 @@
-# HTML5 Canvas Boilerplate
+# Circle Collision Detection
 
-## Getting Started
+Simple collision detection between two circles
 
-1.  Clone the repo:
+## Usage
 
-        git clone https://github.com/christopher4lis/canvas-boilerplate.git
-
-2.  Install dependencies:
+1.  Install dependencies:
 
         yarn
 
@@ -14,14 +12,12 @@
 
         npm install
 
-3.  Run webpack:
+2.  Run webpack:
 
         npm start
 
-Your canvas piece should open up automatically at http://localhost:3000 and you should see 'HTML CANVAS BOILERPLATE' on hover.
-
-Credits to [christopher4lis](https://github.com/christopher4lis/canvas-boilerplate)
+Credits to christopher4lis for the [canvas boilerplate](https://github.com/christopher4lis/canvas-boilerplate)
 
 ## References
 
-  - [christopher4lis](https://github.com/christopher4lis/canvas-boilerplate)
+  - [canvas boilerplate](https://github.com/christopher4lis/canvas-boilerplate)
