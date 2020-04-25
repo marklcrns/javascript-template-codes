@@ -21,3 +21,4 @@ Credits to christopher4lis for the [canvas boilerplate](https://github.com/chris
 ## References
 
   - [canvas boilerplate](https://github.com/christopher4lis/canvas-boilerplate)
+  - [How to Code: Collision Detection  Part I](https://www.youtube.com/watch?v=XYzA_kPWyJ8)
