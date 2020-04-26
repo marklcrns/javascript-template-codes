@@ -19,6 +19,6 @@ Your canvas piece should open up automatically at http://localhost:3000 and you 
 Credits to [christopher4lis](https://github.com/christopher4lis)
 
 
-## References
+## Resources
 
   - [Canvas boilerplate](https://github.com/christopher4lis/canvas-boilerplate)
