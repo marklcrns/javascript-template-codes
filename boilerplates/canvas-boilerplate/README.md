@@ -1,12 +1,8 @@
 # HTML5 Canvas Boilerplate
 
-## Getting Started
+## Usage
 
-1.  Clone the repo:
-
-        git clone https://github.com/christopher4lis/canvas-boilerplate.git
-
-2.  Install dependencies:
+1.  Install dependencies:
 
         yarn
 
@@ -14,14 +10,15 @@
 
         npm install
 
-3.  Run webpack:
+2.  Run webpack:
 
         npm start
 
 Your canvas piece should open up automatically at http://localhost:3000 and you should see 'HTML CANVAS BOILERPLATE' on hover.
 
-Credits to [christopher4lis](https://github.com/christopher4lis/canvas-boilerplate)
+Credits to [christopher4lis](https://github.com/christopher4lis)
+
 
 ## References
 
-  - [christopher4lis](https://github.com/christopher4lis/canvas-boilerplate)
+  - [Canvas boilerplate](https://github.com/christopher4lis/canvas-boilerplate)
